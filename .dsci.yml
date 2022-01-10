@@ -1,0 +1,11 @@
+jobs:
+  - name: catting config
+    cmds:
+      - cat .dsci.yml
+      - sleep 10
+      - echo "Done."
+  - name: echoing GCC version
+    env:
+      CC: gcc
+    cmds:
+      - ${CC} --version
